@@ -1,0 +1,17 @@
+Grid Search:
+
+Best parameters found: {'bootstrap': False, 'max_depth': 50, 'max_features': 'auto', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 400}
+0.99 accuracy with a standard deviation of 0.00
+
+- - - - - - - - - - - - - - - -
+
+Randomized Search:
+
+Best parameters found: {'n_estimators': 400, 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 50, 'bootstrap': False}
+0.99 accuracy with a standard deviation of 0.00
+
+- - - - - - - - - - - - - - - -
+
+param_grid:
+
+[{"bootstrap": [True, False],"max_depth": [10, 50, 100, None],"max_features": ["auto", "sqrt"],"min_samples_leaf": [1, 2, 4],"min_samples_split": [2, 5, 10],"n_estimators": [100, 200, 300, 400],}]

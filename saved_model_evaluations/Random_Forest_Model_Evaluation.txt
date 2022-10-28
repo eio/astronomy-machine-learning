@@ -1,0 +1,20 @@
+[ Random_Forest Evaluation ]
+
+Accuracy Score: 0.99
+
+Confusion Matrix:
+[[ 57   5   0]
+ [  1 351   1]
+ [  0   0 285]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.98      0.92      0.95        62
+           1       0.99      0.99      0.99       353
+           2       1.00      1.00      1.00       285
+
+    accuracy                           0.99       700
+   macro avg       0.99      0.97      0.98       700
+weighted avg       0.99      0.99      0.99       700
+

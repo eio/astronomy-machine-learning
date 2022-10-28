@@ -1,0 +1,20 @@
+[ Neural_Network Evaluation ]
+
+Accuracy Score: 0.9837037037037037
+
+Confusion Matrix:
+[[ 239    7    1]
+ [  18 1277   17]
+ [   1    0 1140]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.93      0.97      0.95       247
+           1       0.99      0.97      0.98      1312
+           2       0.98      1.00      0.99      1141
+
+    accuracy                           0.98      2700
+   macro avg       0.97      0.98      0.97      2700
+weighted avg       0.98      0.98      0.98      2700
+
