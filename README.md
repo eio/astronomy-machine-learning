@@ -1,4 +1,12 @@
+# Requirements
+
+Required Python packages can be found in `requirements.txt`
+
 # Running the Code
+
+To inspect the dataset (with details and plots saved to `data_inspection_output/`:
+
+	py inspect_data.py
 
 To train and evaluate the MLP and Random Forest models (using 70% of the original `dataset.csv`):
 
@@ -30,6 +38,10 @@ Evaluations of the pre-trained models are stored in: `loaded_model_evaluations/`
 To avoid duplicating code, functions that are used in both `train_and_tune_models.py` and `load_and_test_models.py` are located in `shared_functions.py`
 
 # Resources
+
+## Dataset Description
+
+	https://www.kaggle.com/datasets/lucidlenn/sloan-digital-sky-survey
 
 ## MLP Neural Network
 

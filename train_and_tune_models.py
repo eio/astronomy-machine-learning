@@ -19,10 +19,6 @@ from shared_functions import *
 # from sklearn.utils.testing import ignore_warnings
 # from sklearn.exceptions import ConvergenceWarning
 
-# For print output readability
-BOLD = "\033[1m"
-UNBOLD = "\033[0m"
-
 
 def neural_network_classifier(X_train, y_train, X_test):
     """
@@ -32,11 +28,23 @@ def neural_network_classifier(X_train, y_train, X_test):
     """
     NN = MLPClassifier(
         activation="logistic",
-        alpha=0.0001,
-        hidden_layer_sizes=(200,),
+        # Logistic Activation Function:
+        # "This function takes any real value as input and outputs values in the range of 0 to 1.
+        # The larger the input (more positive), the closer the output value will be to 1.0,
+        # whereas the smaller the input (more negative), the closer the output will be to 0.0, as shown below.""
+        # - https://www.v7labs.com/blog/neural-networks-activation-functions
         learning_rate="invscaling",
-        max_iter=800,
+        # ‘invscaling’ gradually decreases the learning rate at each time step ‘t’
         solver="adam",
+        # Adam (Adaptive Moment Estimation)
+        # "An algorithm for optimization technique for gradient descent.
+        # The method is really efficient when working with large problem involving a lot of data or parameters.
+        # It requires less memory and is efficient.
+        # Intuitively, it is a combination of the ‘gradient descent with momentum’ algorithm and the ‘RMSP’ algorithm."
+        # - https://www.geeksforgeeks.org/intuition-of-adam-optimizer/
+        hidden_layer_sizes=(200,),
+        alpha=0.0001,
+        max_iter=800,
     )
     # print(NN.get_params())
     NN.fit(X_train, y_train)

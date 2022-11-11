@@ -15,6 +15,10 @@ from sklearn.metrics import (
     ConfusionMatrixDisplay,
 )
 
+# For print output readability
+BOLD = "\033[1m"
+UNBOLD = "\033[0m"
+
 
 def load_data(filename="data/dataset.csv"):
     """
